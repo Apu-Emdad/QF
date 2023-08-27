@@ -1,9 +1,0 @@
-//create
- $toolMethodologies = ToolMethodology::where('status', 1)
-                // ->where('language', app()->getLocale())
-            ->get();
-
-//edit
-   $toolMethodologies = ToolMethodology::where('status', 1)
-                    // ->where('language', app()->getLocale())
-                ->get();
