@@ -1,0 +1,53 @@
+{
+  "name": "next-testing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prod": "next build && node server.js",
+    "lint": "next lint",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "cypress:watch": "npx cypress open",
+    "cypress:build": "npx cypress run --browser chrome --headless"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.5.4",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.5",
+    "@next/font": "13.1.6",
+    "@tanstack/react-query": "^4.24.4",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "axios": "^1.4.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "cypress": "^12.17.4",
+    "eslint": "8.47.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-next": "13.4.16",
+    "eslint-plugin-check-file": "^2.6.2",
+    "husky": "^8.0.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.65.1",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2"
+  }
+}

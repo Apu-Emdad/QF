@@ -1,0 +1,18 @@
+body {
+  background: #FFF;
+  width: 100%;
+}
+
+#__next {
+  width: 100%;
+}
+
+.main-app {
+  .main-content {
+    margin-top: 85px;
+    
+    @media (max-width: 900px){
+      margin-top: 0;
+    }
+  }
+}

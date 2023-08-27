@@ -1,0 +1,9 @@
+//create  
+$toolMethodologies = ToolMethodology::where('status', 1)
+                // ->where('language', app()->getLocale())
+            ->get();
+        return view('admin.intersectionality-tips.add')->with(compact('title', 'toolkitCategories', 'toolMethodologies'));
+//edit
+  $toolMethodologies = ToolMethodology::where('status', 1)
+                    // ->where('language', app()->getLocale())
+                ->get();

@@ -1,0 +1,8 @@
+7 zip
+ditto
+git 
+lightshot
+vs code
+nvm
+spacedesk viewer and driver
+xampp
