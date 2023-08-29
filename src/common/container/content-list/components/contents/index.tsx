@@ -1,13 +1,18 @@
-import { MuiContainer, MuiPaper, MuiInputBase, MuiDivider, MuiIconButton } from 'app/libs/mui-lib';
+import {
+  MuiContainer,
+  MuiPaper,
+  MuiInputBase,
+  MuiDivider,
+  MuiIconButton
+} from 'app/libs/mui-lib';
 import styled from '@emotion/styled';
 import { MuiClose, MuiSearch } from 'app/libs/mui-icons';
 import { MediumScreenFilter } from '..';
 
 interface ContentsProps {
-  isWideScreen: Boolean
+  isWideScreen: Boolean;
 }
 const Contents = ({ isWideScreen }: ContentsProps) => {
-
   /* ==== Styled Component Starts ==== */
   const SearchContainer = styled(MuiPaper)({
     width: isWideScreen ? '50%' : '100%',
@@ -20,12 +25,23 @@ const Contents = ({ isWideScreen }: ContentsProps) => {
 
   return (
     <MuiContainer>
-      <SearchContainer >
+      <SearchContainer>
         <MuiIconButton sx={{ p: '10px' }}>
           <MuiSearch />
         </MuiIconButton>
         <MuiDivider sx={{ height: 28, m: 0.5 }} />
-        <MuiInputBase sx={{ ml: 1, flex: 1 }} placeholder='Search' />
+        <MuiInputBase sx={{ ml: 1, flex: 1 }} placeholder="Search" />
+        <MuiDivider sx={{ height: 28, m: 0.5 }} />
+        <MuiIconButton sx={{ p: '10px' }}>
+          <MuiClose />
+        </MuiIconButton>
+      </SearchContainer>
+      <SearchContainer>
+        <MuiIconButton sx={{ p: '10px' }}>
+          <MuiSearch />
+        </MuiIconButton>
+        <MuiDivider sx={{ height: 28, m: 0.5 }} />
+        <MuiInputBase sx={{ ml: 1, flex: 1 }} placeholder="Search" />
         <MuiDivider sx={{ height: 28, m: 0.5 }} />
         <MuiIconButton sx={{ p: '10px' }}>
           <MuiClose />
